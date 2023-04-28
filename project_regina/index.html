@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mynerve&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me encantas</title>
+
+
+
+</head>
+
+<body>
+
+    <script>
+        function amorcito() {
+            var res = prompt("¿me amas?", "");
+            console.log(res);
+            if (res == "si") {
+                var amor = 0;
+                amor = prompt("del 1 al 10, cuanto me amas ?");
+                console.log(amor);
+
+                if (amor <= 11) {
+
+                    for (var i=1; i<=amor; i++) {
+                    var res2 = prompt("mucho mucho ?", "");
+                    console.log(i);                
+                    }
+
+                }
+                else{
+                    alert("no me amas, pipipipii");
+                }
+            }
+            else{
+                alert("no me amaaas, pipipipi");
+            }
+            
+        }
+    </script>
+
+    <input type="button" onclick="amorcito();" value="Verificar"/>
+
+    <header class="TituloPrincipal">Te amo mucho</header>
+
+    <div class= "muchos">
+        <h1 id="p1">mucho mucho mucho</h1>
+        <h2 id="p2">mucho mucho mucho</h2>
+        <h3 id="p3">mucho mucho mucho</h3>
+        <h4 id="p4">mucho mucho mucho</h4>
+        <h5 id="p5">mucho mucho mucho</h5>
+    </div>
+
+    <div class="DivBoton">
+    <button class="boton" id="boton" type="button"> <img src="jl1.1.jpg" height ="210" width="310" /></button>
+    </div>
+
+
+    <audio src=""></audio>
+    <script>
+        var boton = document.querySelector(".boton")
+        var audioEtiqueta = document.querySelector("audio")
+
+        boton.addEventListener("click", () => {
+            audioEtiqueta.setAttribute("src", "zoe-arrullo.mp3")
+            audioEtiqueta.play()
+            console.log(`Reproduciendo: ${audioEtiqueta.src}`)
+        })
+    </script>
+
+    <p class="p1">↑ presiona la imagen ↑ </p>
+
+    <div class="Dbtn">
+        <button class="btn1" type="button"><img src="stop.jpg" height ="50" width="50" /></button>
+        </div>
+    
+        <script>
+            var boton = document.querySelector(".btn1")
+            var audioEtiqueta = document.querySelector("audio")
+    
+            boton.addEventListener("click", () => {
+                const obj = document.querySelector("audio");
+                audioEtiqueta.pause();
+                console.log(obj.paused);
+            })
+        </script>
+
+        <p class="pause">pause</p>
+
+
+
+    <div class="DivBoton">
+        <button class="boton2" id="boton" type="button"> <img src="yo.1.jpg" height ="310" width="310" /></button>
+        </div>
+    
+        <audio src=""></audio>
+
+        <script>
+            var boton2 = document.querySelector(".boton2")
+            var audioEtiqueta = document.querySelector("audio")
+    
+            boton2.addEventListener("click", () => {
+                audioEtiqueta.setAttribute("src", "rupatra.mp3")
+                audioEtiqueta.play()
+                console.log(`Reproduciendo: ${audioEtiqueta.src}`)
+            })
+        </script>
+    
+        <p class="p2">↑ presiona la imagen 2 ↑ </p>
+
+        <div class= "muchos">
+            <h5 id="p5">mucho mucho mucho</h1>
+            <h4 id="p4">mucho mucho mucho</h2>
+            <h3 id="p3">mucho mucho mucho</h3>
+            <h2 id="p2">mucho mucho mucho</h4>
+            <h1 id="p1">mucho mucho mucho</h5>
+        </div>
+
+</body>
+
+</html>
