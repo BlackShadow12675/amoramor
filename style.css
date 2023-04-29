@@ -176,6 +176,7 @@ body {
     border-radius: 0 3px 3px 0;
     user-select: none;
     background-color: rgba(255, 255, 255, 0.786);
+    opacity: 0.3;
 }
 
 .next {
@@ -185,6 +186,8 @@ body {
 
 .prev:hover, .next:hover {
     background-color: rgb(78, 78, 78);
+    opacity: 0.1;
+    transition: opacity 1s ease;
 }
 
 .text {
@@ -238,3 +241,25 @@ body {
     from {opacity: .4}
     to {opacity: 1}
 }
+
+/* seccion de botones de pausa y reanudar de la transicion */
+.controls {
+    margin-top: 10px;
+  }
+  
+  .controls button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .controls button:hover {
+    background-color: #3e8e41;
+  }
