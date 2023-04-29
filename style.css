@@ -86,6 +86,54 @@ body {
     transform: scale(1.2);
 }
 
+/*Prueba de bordes animados*/
+    /* Definimos las variables de color en la raíz del documento */
+@media (max-width:1250px) {
+    :root {
+        --bg: #ffffff; /* color de fondo */
+        --violet: rgb(3,165,245); /* color violeta */
+        --pink: #f60000; /* color rosa */
+        --turquoise: rgb(38,237,161); /* color turquesa */
+        font-size: 10px; /* tamaño de fuente */
+    }
+
+    /* Estilo de la caja principal */
+    .box {
+        display: grid; /* mostramos la caja como una cuadrícula */
+        place-items: center; /* colocamos el contenido en el centro de la caja */
+    }
+
+    /* Estilo del borde con gradiente */
+    .gradient-border {
+        animation: gradient 10s linear infinite; /* animación que se repite infinitamente */
+        background: linear-gradient(100deg, var(--violet) 25%, var(--turquoise) 50%, var(--violet) 75%); /* fondo con gradiente */
+        background-repeat: repeat; /* repetimos el fondo para cubrir toda la caja */
+        border-radius: 2.1rem; /* radio del borde */
+        padding: 0.4rem; /* espacio interno del borde */
+        margin: 0.1rem; /* espacio externo del borde */
+    }
+
+
+    /* Definimos la animación */
+    @keyframes gradient {
+        0% {
+            background-position: 0 0; /* posición inicial del gradiente */
+        }
+
+        50% {
+            background-position: -80rem 0; /* posición a la mitad de la animación */
+        }
+        100% {
+            background-position: 0 0; /* posición final del gradiente */
+        }
+    }
+
+    .slideshow-container{
+        border-radius: 2.1rem;
+    }
+
+}
+
 
 /*CSS principal del slider*/
 .slideshow-container {
@@ -107,7 +155,7 @@ body {
     top: 0;
     left: 0;
     opacity: 0;
-    transition: opacity 1.5s;
+    transition: opacity 2s ease;
 }
 
 .mySlides.fade {
@@ -121,13 +169,13 @@ body {
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(255, 255, 255, 0.786);
 }
 
 .next {
@@ -136,7 +184,7 @@ body {
 }
 
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,1);
+    background-color: rgb(78, 78, 78);
 }
 
 .text {
