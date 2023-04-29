@@ -8,38 +8,130 @@
     <script src="script.js"></script>
 </head>
 <body>
+
+<div class="music">
+    <!--Esto es el boton de play de la cancion-->
+    <div class="DivBoton">
+    <button class="boton" id="boton" type="button"><img class="img" src="musica.gif"/></button>
+    </div>
+
+    <!--Esto es el scrit  y funcion de audio-->
+    <audio src=""></audio>
+    <script>
+        var boton = document.querySelector(".boton")
+        var audioEtiqueta = document.querySelector("audio")
+
+        boton.addEventListener("click", () => {
+            audioEtiqueta.setAttribute("src", "zoe-arrullo.mp3")
+            audioEtiqueta.play()
+            console.log(`Reproduciendo: ${audioEtiqueta.src}`)
+        })
+    </script>
+
+    <!--Esto es el boton de stop de la cancion-->
+    <div class="Dbtn">
+        <button class="btn1" type="button"><img class="img2" src="pausa.png" height ="50" width="50" /></button>
+        </div>
+        <!--Esto es el script y funcion de stop de la cancion-->
+        <script>
+            var boton = document.querySelector(".btn1")
+            var audioEtiqueta = document.querySelector("audio")
+    
+            boton.addEventListener("click", () => {
+                const obj = document.querySelector("audio");
+                audioEtiqueta.pause();
+                console.log(obj.paused);
+            })
+        </script>
+</div>
+
+
+
 <div class="slideshow-container">
-    <div class="numbertext">1 / 19</div>
+    <div class="numbertext">0 / 19</div>
         <div class="mySlides fade">
-        <img src='FtsAmor/amor.jpg' style="width:100%" alt="Imagen 1">
+        <img src='FtsAmor/amor.webp' style="width:100%" alt="Imagen 1">
         <div class="text">primera imagen</div>
     </div>
 
     <div class="mySlides fade">
-        <div class="numbertext">2 / 19</div>
-        <img src='FtsAmor/amor1.jpg' style="width:100%" alt="Imagen 2">
+        <div class="numbertext">1 / 19</div>
+        <img src='FtsAmor/amor1.webp' style="width:100%" alt="Imagen 2">
     </div>
 
     <div class="mySlides fade">
+        <div class="numbertext">2 / 19</div>
+        <img src='FtsAmor/amor2.webp' style="width:100%" alt="Imagen 3">
+    </div>
+    <div class="mySlides fade">
         <div class="numbertext">3 / 19</div>
-        <img src='FtsAmor/amor2.jpg' style="width:100%" alt="Imagen 3">
+        <img src='FtsAmor/amor3.webp' style="width:100%" alt="Imagen 3">
     </div>
     <div class="mySlides fade">
         <div class="numbertext">4 / 19</div>
-        <img src='FtsAmor/amor3.jpg' style="width:100%" alt="Imagen 3">
+        <img src='FtsAmor/amor4.webp' style="width:100%" alt="Imagen 3">
     </div>
     <div class="mySlides fade">
         <div class="numbertext">5 / 19</div>
-        <img src='FtsAmor/amor4.jpg' style="width:100%" alt="Imagen 3">
+        <img src='FtsAmor/amor5.webp' style="width:100%" alt="Imagen 3">
     </div>
     <div class="mySlides fade">
         <div class="numbertext">6 / 19</div>
-        <img src='FtsAmor/amor5.jpg' style="width:100%" alt="Imagen 3">
+        <img src='FtsAmor/amor6.webp' style="width:100%" alt="Imagen 3">
     </div>
     <div class="mySlides fade">
         <div class="numbertext">7 / 19</div>
-        <img src='FtsAmor/amor6.jpg' style="width:100%" alt="Imagen 3">
+        <img src='FtsAmor/amor7.webp' style="width:100%" alt="Imagen 3">
     </div>
+    <div class="mySlides fade">
+        <div class="numbertext">8 / 19</div>
+        <img src='FtsAmor/amor8.webp' style="width:100%" alt="Imagen 3">
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">9 / 19</div>
+        <img src='FtsAmor/amor9.webp' style="width:100%" alt="Imagen 3">
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">10 / 19</div>
+        <img src='FtsAmor/amor10.webp' style="width:100%" alt="Imagen 3">
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">11 / 19</div>
+        <img src='FtsAmor/amor11.webp' style="width:100%" alt="Imagen 3">
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">12 / 19</div>
+        <img src='FtsAmor/amor12.webp' style="width:100%" alt="Imagen 3">
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">13 / 19</div>
+        <img src='FtsAmor/amor13.webp' style="width:100%" alt="Imagen 3">
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">14 / 19</div>
+        <img src='FtsAmor/amor14.webp' style="width:100%" alt="Imagen 3">
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">15 / 19</div>
+        <img src='FtsAmor/amor15.webp' style="width:100%" alt="Imagen 3">
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">16 / 19</div>
+        <img src='FtsAmor/amor16.webp' style="width:100%" alt="Imagen 3">
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">17 / 19</div>
+        <img src='FtsAmor/amor17.1.webp' style="width:100%" alt="Imagen 3">
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">18 / 19</div>
+        <img src='FtsAmor/amor17.2.webp' style="width:100%" alt="Imagen 3">
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">19 / 19</div>
+        <img src='FtsAmor/amor18.webp' style="width:100%" alt="Imagen 3">
+    </div>
+
 
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
