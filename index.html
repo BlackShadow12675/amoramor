@@ -15,34 +15,10 @@
     <button class="boton" id="boton" type="button" onclick="resumeSlides()"><img class="img" src="musica.gif"/></button>
     </div>
 
-    <!--Esto es el scrit  y funcion de audio-->
-    <audio src=""></audio>
-    <script>
-        var boton = document.querySelector(".boton")
-        var audioEtiqueta = document.querySelector("audio")
-
-        boton.addEventListener("click", () => {
-            audioEtiqueta.setAttribute("src", "compartir.mp3")
-            audioEtiqueta.play()
-            console.log(`Reproduciendo: ${audioEtiqueta.src}`)
-        })
-    </script>
-
     <!--Esto es el boton de stop de la cancion-->
     <div class="Dbtn">
         <button class="btn1" type="button" onclick="pauseSlides()"><img class="img2" src="pausa.png" height ="50" width="50" /></button>
         </div>
-        <!--Esto es el script y funcion de stop de la cancion-->
-        <script>
-            var boton = document.querySelector(".btn1")
-            var audioEtiqueta = document.querySelector("audio")
-    
-            boton.addEventListener("click", () => {
-                const obj = document.querySelector("audio");
-                audioEtiqueta.pause();
-                console.log(obj.paused);
-            })
-        </script>
 </div>
 
 <br>
@@ -168,6 +144,28 @@
 <botton class="dot" onclick="currentSlide(19), pauseSlides()"></botton>
 </div>
 
+<!--Esto es el scrit  y funcion de audio-->
+<audio src=""></audio>
+<script>
+    var boton = document.querySelector(".boton")
+    var audioEtiqueta = document.querySelector("audio")
+    boton.addEventListener("click", () => {
+        audioEtiqueta.setAttribute("src", "compartir.mp3")
+        audioEtiqueta.play()
+        console.log(`Reproduciendo: ${audioEtiqueta.src}`)
+    })
+</script>
+
+<!--Esto es el script y funcion de stop de la cancion-->
+<script>
+    var boton = document.querySelector(".btn1")
+    var audioEtiqueta = document.querySelector("audio")
+    boton.addEventListener("click", () => {
+        const obj = document.querySelector("audio");
+        audioEtiqueta.pause();
+        console.log(obj.paused);
+    })
+</script>
 
 </body>
 </html>
