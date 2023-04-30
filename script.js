@@ -22,7 +22,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   timer = setTimeout(function() {
     showSlides(slideIndex += 1);
-  }, 2000); // tiempo en milisegundos (5 segundos)
+  }, 4000); // tiempo en milisegundos (5 segundos)
 }
 
 function pauseSlides() {

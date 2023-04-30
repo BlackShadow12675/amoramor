@@ -12,7 +12,7 @@
 <div class="music">
     <!--Esto es el boton de play de la cancion-->
     <div class="DivBoton">
-    <button class="boton" id="boton" type="button"><img class="img" src="musica.gif"/></button>
+    <button class="boton" id="boton" type="button" onclick="resumeSlides()"><img class="img" src="musica.gif"/></button>
     </div>
 
     <!--Esto es el scrit  y funcion de audio-->
@@ -30,7 +30,7 @@
 
     <!--Esto es el boton de stop de la cancion-->
     <div class="Dbtn">
-        <button class="btn1" type="button"><img class="img2" src="pausa.png" height ="50" width="50" /></button>
+        <button class="btn1" type="button" onclick="pauseSlides()"><img class="img2" src="pausa.png" height ="50" width="50" /></button>
         </div>
         <!--Esto es el script y funcion de stop de la cancion-->
         <script>
@@ -132,38 +132,40 @@
         <div class="numbertext">19 / 19</div>
         <img src='FtsAmor/amor18.1.webp' style="width:100%" alt="Imagen 3">
     </div>
-<br>
-    <div class="controls">
-        <button onclick="pauseSlides()">Pausar</button>
-        <button onclick="resumeSlides()">Reanudar</button>
-    </div>
-<br>
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-
 </main>
 
+<!--Boton de transicion de los slides
+    <div class="controls">
+        <button onclick="pauseSlides()">Pausar</button>
+        <button onclick="resumeSlides()">PLAY</button>
+    </div>
+<br>-->
+<!--<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
+
+<!--dots o puntos de los slides-->
+
+<br>
 <div style="text-align:center">
-<botton class="dot" onclick="currentSlide(1)"></botton> 
-<botton class="dot" onclick="currentSlide(2)"></botton> 
-<botton class="dot" onclick="currentSlide(3)"></botton>
-<botton class="dot" onclick="currentSlide(4)"></botton> 
-<botton class="dot" onclick="currentSlide(5)"></botton> 
-<botton class="dot" onclick="currentSlide(6)"></botton> 
-<botton class="dot" onclick="currentSlide(7)"></botton>
-<botton class="dot" onclick="currentSlide(8)"></botton>
-<botton class="dot" onclick="currentSlide(9)"></botton>
-<botton class="dot" onclick="currentSlide(10)"></botton>
-<botton class="dot" onclick="currentSlide(11)"></botton>
-<botton class="dot" onclick="currentSlide(12)"></botton>
-<botton class="dot" onclick="currentSlide(13)"></botton>
-<botton class="dot" onclick="currentSlide(14)"></botton>
-<botton class="dot" onclick="currentSlide(15)"></botton>
-<botton class="dot" onclick="currentSlide(16)"></botton>
-<botton class="dot" onclick="currentSlide(17)"></botton>
-<botton class="dot" onclick="currentSlide(18)"></botton>
-<botton class="dot" onclick="currentSlide(19)"></botton>
+<botton class="dot" onclick="currentSlide(1), pauseSlides()"></botton> 
+<botton class="dot" onclick="currentSlide(2), pauseSlides()"></botton> 
+<botton class="dot" onclick="currentSlide(3), pauseSlides()"></botton>
+<botton class="dot" onclick="currentSlide(4), pauseSlides()"></botton> 
+<botton class="dot" onclick="currentSlide(5), pauseSlides()"></botton> 
+<botton class="dot" onclick="currentSlide(6), pauseSlides()"></botton> 
+<botton class="dot" onclick="currentSlide(7), pauseSlides()"></botton>
+<botton class="dot" onclick="currentSlide(8), pauseSlides()"></botton>
+<botton class="dot" onclick="currentSlide(9), pauseSlides()"></botton>
+<botton class="dot" onclick="currentSlide(10), pauseSlides()"></botton>
+<botton class="dot" onclick="currentSlide(11), pauseSlides()"></botton>
+<botton class="dot" onclick="currentSlide(12), pauseSlides()"></botton>
+<botton class="dot" onclick="currentSlide(13), pauseSlides()"></botton>
+<botton class="dot" onclick="currentSlide(14), pauseSlides()"></botton>
+<botton class="dot" onclick="currentSlide(15), pauseSlides()"></botton>
+<botton class="dot" onclick="currentSlide(16), pauseSlides()"></botton>
+<botton class="dot" onclick="currentSlide(17), pauseSlides()"></botton>
+<botton class="dot" onclick="currentSlide(18), pauseSlides()"></botton>
+<botton class="dot" onclick="currentSlide(19), pauseSlides()"></botton>
 </div>
 
 
